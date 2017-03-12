@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/vue-keynote.svg)](https://www.npmjs.com/package/vue-keynote) [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 
-> Keynote with Vue.js
+> Keynote with Vue.js - Build presentations on the go!
 
 ## Installation
 

@@ -28,7 +28,7 @@
     "prepublish": "yon run build",
     "deploy": "surge --domain keynote.surge.sh ./examples/dist",
     "predeploy": "yarn run build && yarn run example",
-    "example": "vue build --dist examples/dist/ --prod examples/Simple.vue"
+    "example": "vue build --dist examples/dist/ --prod examples/index.js"
   },
   "lint-staged": {
     "*.{vue,jsx,js}": [
