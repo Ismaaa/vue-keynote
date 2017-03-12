@@ -2,7 +2,9 @@
 <div class="slide-wrapper">
   <div class="slide slide-end">
     End of Keynote! <br>
-    <small><small>Built with Vue.js</small></small>
+    <small>
+      <small>Built with Vue + <a href="https://github.com/znck/vue-keynote">Keynote</a></small>
+    </small>
   </div>
 </div>
 </template>
