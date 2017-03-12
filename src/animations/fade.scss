@@ -1,0 +1,42 @@
+$fade-duration: 2s;
+
+.fade-in {
+  &-enter-active {
+    animation: fadeIn $fade-duration;
+  }
+
+  &-leave-active {
+    animation: fadeOut $fade-duration;
+  }
+}
+
+.fade-out {
+  &-enter-active {
+    animation: fadeOut $fade-duration;
+  }
+
+  &-leave-active {
+    animation: fadeIn $fade-duration;
+  }
+}
+
+// -- ANIMATIONS
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

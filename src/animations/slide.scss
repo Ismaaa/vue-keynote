@@ -1,0 +1,131 @@
+$slide-duration: 0.5s !default;
+
+.slide-in-right {
+  &-enter-active {
+    animation: slideInRight $slide-duration;
+  }
+
+  &-leave-active {
+    animation: slideOutLeft $slide-duration;
+  }
+}
+
+.slide-in-left {
+  &-enter-active {
+    animation: slideInLeft $slide-duration;
+  }
+
+  &-leave-active {
+    animation: slideOutRight $slide-duration;
+  }
+}
+
+.slide-in-bottom {
+  &-enter-active {
+    animation: slideInBottom $slide-duration;
+  }
+
+  &-leave-active {
+    animation: slideOutTop $slide-duration;
+  }
+}
+
+.slide-in-top {
+  &-enter-active {
+    animation: slideInTop $slide-duration;
+  }
+
+  &-leave-active {
+    animation: slideOutBottom $slide-duration;
+  }
+}
+
+// -- Animations
+
+@keyframes slideInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes slideInTop {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutTop {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutBottom {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, 100%, 0);
+  }
+}
