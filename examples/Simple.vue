@@ -43,7 +43,7 @@
     Be expressive with Vue.js
   </TitleSlide>
   <Slide animation="flip" class="no-margin">
-    <iframe width="100%" height="100%" src="//jsfiddle.net/znck/fdzwtz43/embedded/" allowfullscreen="allowfullscreen"
+    <iframe width="100%" height="100%" src="//jsfiddle.net/znck/phetsvbz/embeded/" allowfullscreen="allowfullscreen"
             frameborder="0"></iframe>
   </Slide>
 </Keynote>
