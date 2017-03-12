@@ -25,7 +25,10 @@
     "test": "cross-env BABEL_ENV=test karma start test/karma.conf.js --single-run",
     "dev": "webpack-dashboard -- webpack-dev-server --config build/webpack.config.dev.js --open",
     "dev:coverage": "cross-env BABEL_ENV=test karma start test/karma.conf.js",
-    "prepublish": "yon run build"
+    "prepublish": "yon run build",
+    "deploy": "surge --domain keynote.surge.sh ./examples/dist",
+    "predeploy": "yarn run build && yarn run example",
+    "example": "vue build --dist examples/dist/ --prod examples/Simple.vue"
   },
   "lint-staged": {
     "*.{vue,jsx,js}": [
