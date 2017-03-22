@@ -21,7 +21,7 @@ export default {
   data: () => ({
     current: -1,
     total: 0,
-    direction: 0,
+    direction: 0
   }),
 
   render (h) {
@@ -62,7 +62,7 @@ export default {
 
     return h(
         'div',
-        { 'class': { keynote: true } },
+        { 'class': { keynote: true }},
         rendered
     )
   },
@@ -77,6 +77,11 @@ export default {
       this.direction = -1
 
       if (this.current > 0) this.current -= 1
+    },
+
+    onHashChange () {
+      const hashInput = window.location.hash.slice(1)
+      this.current = hashInput ? parseInt(decodeURIComponent(hashInput)) : 0
     }
   },
 
@@ -90,6 +95,17 @@ export default {
         this.next()
       }
     }, false)
+  },
+
+  mounted () {
+    this.onHashChange()
+    window.addEventListener('hashchange', () => this.onHashChange(), false)
+  },
+
+  watch: {
+    current (value) {
+      window.location.hash = encodeURIComponent(value)
+    }
   }
 }
 

@@ -21,12 +21,12 @@ export default {
   props: {
     vertical: {
       type: Boolean,
-      default: false,
+      default: false
     },
 
     left: {
       type: Boolean,
-      default: false,
+      default: false
     },
 
     photo: {
@@ -35,12 +35,12 @@ export default {
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
 
     subtitle: {
       type: String,
-      default: null,
+      default: null
     }
   }
 
@@ -61,6 +61,7 @@ export default {
     flex-shrink: 1;
     max-width: 100%;
     height: auto;
+    max-height: 100%;
     object-fit: cover;
     overflow: hidden;
     margin: 2rem;

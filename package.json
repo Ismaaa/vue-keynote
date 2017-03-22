@@ -141,5 +141,9 @@
   "license": {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
+  "dependencies": {
+    "marked": "^0.3.6",
+    "prismjs": "^1.6.0"
   }
 }

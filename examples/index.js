@@ -3,5 +3,5 @@ import Simple from './Simple.vue'
 
 new Vue({
   el: '#app',
-  render: h => h(Simple)
+  ...Simple
 })

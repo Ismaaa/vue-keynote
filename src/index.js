@@ -4,6 +4,7 @@ import TitleSlide from './components/Slide/Title.vue'
 import AuthorSlide from './components/Slide/Author.vue'
 import PhotoTitleSlide from './components/Slide/PhotoTitle.vue'
 import PhotoSlide from './components/Slide/Photo.vue'
+import Markdown from './components/Markdown.vue'
 
 function plugin (Vue) {
   Vue.component('Keynote', Keynote)
@@ -12,6 +13,7 @@ function plugin (Vue) {
   Vue.component('AuthorSlide', AuthorSlide)
   Vue.component('PhotoTitleSlide', PhotoTitleSlide)
   Vue.component('PhotoSlide', PhotoSlide)
+  Vue.component('Markdown', Markdown)
 }
 
 // Install by default if using the script tag

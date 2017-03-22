@@ -37,6 +37,16 @@
   <TitleSlide title="Fade Out" animation="fade-out" class="center-left">
     Text in Center Left
   </TitleSlide>
+  <TitleSlide title="Markdown" animation="fade-out">
+    <Markdown>
+      # Heading
+
+      ```js
+      // code
+      new Vue({ el: '#app' })
+      ```
+    </Markdown>
+  </TitleSlide>
   <TitleSlide title="Flip" subtitle="Be expressive with Vue.js" animation="flip">
     In center! <br>
     (by default) <br>
@@ -56,12 +66,12 @@ import Vue from 'vue'
 Vue.use(VueKeynote)
 
 export default {
-  el: '#app',
-  name: 'SimpleKeynote',
+  name: 'SimpleKeynote'
 }
 </script>
 
 
 <style lang="scss">
 @import "../dist/vue-keynote.css";
+@import url("https://unpkg.com/prismjs@1.6.0/themes/prism.css");
 </style>
