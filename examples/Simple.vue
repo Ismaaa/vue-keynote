@@ -52,6 +52,29 @@
     (by default) <br>
     Be expressive with Vue.js
   </TitleSlide>
+  <Slide>
+    <Markdown v-pre>
+      ```html
+      &lt;div&gt;Hello {{ name }}&lt;/div&gt;
+      ```
+    </Markdown>
+
+    <Markdown>
+      ```js
+      render (h) {
+      return h('div', 'Hello ' + this.name)
+      }
+      ```
+    </Markdown>
+
+    <Markdown>
+      ```jsx
+      render (h) {
+        return (&lt;div&gt;Hello {this.name}&lt;/div&gt;)
+      }
+      ```
+    </Markdown>
+  </Slide>
   <Slide animation="flip" class="no-margin">
     <iframe width="100%" height="100%" src="//jsfiddle.net/znck/phetsvbz/embedded/" allowfullscreen="allowfullscreen"
             frameborder="0"></iframe>
@@ -62,6 +85,7 @@
 <script lang="babel">
 import VueKeynote from '../'
 import Vue from 'vue'
+import '../node_modules/prismjs/components/prism-jsx'
 
 Vue.use(VueKeynote)
 

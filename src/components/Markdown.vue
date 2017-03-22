@@ -2,10 +2,6 @@
 import marked from 'marked'
 import highlight from 'prismjs'
 
-const langs = {
-  js: 'javascript'
-}
-
 export default {
   name: 'Markdown',
 
@@ -25,7 +21,7 @@ export default {
     }
     const regExp = new RegExp(`^${spaces}`)
 
-    text = lines.map(line => line.replace(regExp, '')).join('\n')
+    text = lines.map(line => line.replace(regExp, '')).join('\n').trim()
 
     return h('div', {
       domProps: {
@@ -37,8 +33,13 @@ export default {
           sanitize: false,
           smartLists: true,
           highlight (code, lang) {
-            lang = langs[lang] || lang
-            return highlight.highlight(code, highlight.languages[lang], lang)
+            try {
+              return highlight.highlight(code, highlight.languages[lang], lang)
+            } catch (e) {
+              console.log(e)
+
+              return code
+            }
           }
         })
       }

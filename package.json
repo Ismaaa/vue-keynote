@@ -137,10 +137,7 @@
     "url": "https://github.com/znck/vue-keynote/issues"
   },
   "homepage": "https://github.com/znck/vue-keynote#readme",
-  "license": {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/mit-license.php"
-  },
+  "license": "MIT",
   "dependencies": {
     "marked": "^0.3.6",
     "prismjs": "^1.6.0"
