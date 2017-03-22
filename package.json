@@ -1,6 +1,6 @@
 {
   "name": "vue-keynote",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Keynote with Vue.js",
   "author": "Rahul Kadyan <hi@znck.me>",
   "main": "dist/vue-keynote.common.js",
