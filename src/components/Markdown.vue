@@ -10,7 +10,7 @@ export default {
   name: 'Markdown',
 
   render (h) {
-    let text = this.$slots.default.length ? this.$slots.default[0].text : ''
+    let text = this.$slots.default.length ? this.$slots.default.reduce((r, i) => r + '\n' + i.text, '') : ''
     let spaces = ''
     const lines = text.split(/\r?\n/)
     for (let i = 0; i < lines.length; ++i) {
