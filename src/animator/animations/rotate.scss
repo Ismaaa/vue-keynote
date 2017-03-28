@@ -1,22 +1,12 @@
-$rotate-duration: 0.5s !default;
+$rotate-duration: .5s !default;
 
-.rotate-in {
+.rotate {
   &-enter-active {
     animation: rotateIn $rotate-duration;
   }
 
   &-leave-active {
     animation: rotateOut $rotate-duration;
-  }
-}
-
-.rotate-out {
-  &-enter-active {
-    animation: rotateOut $rotate-duration;
-  }
-
-  &-leave-active {
-    animation: rotateIn $rotate-duration;
   }
 }
 
@@ -30,13 +20,14 @@ $rotate-duration: 0.5s !default;
 
   to {
     transform-origin: center;
-    transform: none;
+    transform: rotate3d(0, 0, 1, 0);
     opacity: 1;
   }
 }
 
 @keyframes rotateOut {
   from {
+    transform: rotate3d(0, 0, 1, 0);
     transform-origin: center;
     opacity: 1;
   }

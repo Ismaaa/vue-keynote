@@ -1,22 +1,12 @@
 $fade-duration: 2s;
 
-.fade-in {
+.fade {
   &-enter-active {
     animation: fadeIn $fade-duration;
   }
 
   &-leave-active {
     animation: fadeOut $fade-duration;
-  }
-}
-
-.fade-out {
-  &-enter-active {
-    animation: fadeOut $fade-duration;
-  }
-
-  &-leave-active {
-    animation: fadeIn $fade-duration;
   }
 }
 
