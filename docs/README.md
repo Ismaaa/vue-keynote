@@ -14,6 +14,7 @@ sidebar: false
 
 ## Introduction
 **Keynote** (`vue-keynote`) is a presentation/slideshow library. It enables you to declaratively code your slides.
+Checkout live demo - https://keynote.surge.sh
 
 > Keynote with Vue.js - Build presentations on the go!
 

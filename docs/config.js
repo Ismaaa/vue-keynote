@@ -6,12 +6,10 @@ const config = {
   nav: [
     { title: 'Home', path: '/' },
     { title: 'Guide', path: '/guide' },
-    { title: 'API', path: '/api' },
+    { title: 'API', path: '/api' }
   ],
 
-  plugins: [],
-
-  // url: 'http://vue-keynote.znck.me'
+  url: 'http://vue-keynote.znck.me'
 }
 
 docute.init(config)
