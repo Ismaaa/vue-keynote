@@ -9,7 +9,7 @@ const config = {
     { title: 'API', path: '/api' }
   ],
 
-  url: 'http://keynote.znck.me'
+  url: 'https://keynote.znck.me'
 }
 
 docute.init(config)
