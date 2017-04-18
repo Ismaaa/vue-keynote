@@ -16,7 +16,7 @@ Checkout live demo - https://keynote.surge.sh
 > Keynote with Vue.js - Build presentations on the go!
 
 ## Documentation
-http://vue-keynote.znck.me/
+http://keynote.znck.me/
 
 ## Development
 
